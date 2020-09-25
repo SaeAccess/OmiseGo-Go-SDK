@@ -460,6 +460,7 @@ type (
 	UserParams struct {
 		ProviderUserId    string                 `json:"provider_user_id"`
 		Username          string                 `json:"username"`
+		Password          string                 `json:"password"`
 		Fullname          string                 `json:"full_name"`
 		Callingname       string                 `json:"calling_name"`
 		Email             string                 `json:"email"`
