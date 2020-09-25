@@ -460,6 +460,10 @@ type (
 	UserParams struct {
 		ProviderUserId    string                 `json:"provider_user_id"`
 		Username          string                 `json:"username"`
+		Fullname          string                 `json:"full_name"`
+		Callingname       string                 `json:"calling_name"`
+		Email             string                 `json:"email"`
+		Enabled           bool                   `json:"enabled"`
 		Metadata          map[string]interface{} `json:"metadata,omitempty"`
 		EncryptedMetadata map[string]interface{} `json:"encrypted_metadata,omitempty"`
 	}
