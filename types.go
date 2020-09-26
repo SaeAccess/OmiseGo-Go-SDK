@@ -594,8 +594,8 @@ type (
 
 	TransactionCreateParams struct {
 		IdempotencyToken      string                 `json:"idempotency_token"`
-		FromAddress           string                 `json:"from_address"`
-		ToAddress             string                 `json:"to_address"`
+		FromAddress           string                 `json:"from_address,omitempty"`
+		ToAddress             string                 `json:"to_address,omitempty"`
 		FromAccountId         string                 `json:"from_account_id,omitempty"`
 		ToAccountId           string                 `json:"to_account_id,omitempty"`
 		FromUserId            string                 `json:"from_user_id,omitempty"`
